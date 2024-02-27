@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <title>Newsletter</title>
+</head>
+<body>
+    <header class="main-header">
+		<h1 class="name">THE CODE REVIEW</h1>
+	</header>
+    <div class="after-header">
+		<h1 class="headline">Signup for our newsletter</h1>
+		<span class="tagline">Get the latest news on how your code is doing right in your inbox.</span>
+	</div>
+    <hr class="solid">
+    <hr class="solid2">
+    <main>
+        
+        <form action="index.html" method="post">
+        
+            <fieldset>
+          
+                <legend><span class="info"></span>Contact Information</legend>
+            
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name">
+                
+                <label for="mail">Email Address</label>
+                <input type="email" id="mail" name="user_email">
+                
+                <label for="phonenumber">Phone Number</label>
+                <input type="phonenumber" id="phonenumber" name="user_phonenumber">
+                
+                <label for="streetaddress">Street Address</label>
+                <input type="streetaddress" id="streetaddress" name="user_streetaddress">
+
+                <label for="city">City</label>
+                <input type="city" id="city" name="user_city">
+
+                <label for="zipcode">Zip Code</label>
+                <input type="zipcode" id="zipcode" name="user_zipcode">
+                
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                    <option value="" disabled selected>Choose State</option>
+                    <option value="california">California</option>
+                    <option value="texas">Texas</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="virginia">Virginia</option>
+                    <option value="hawaii">Hawaii</option>
+                    <option value="new_jersey">New Jersey</option>
+                </select>
+            </fieldset>
+
+            <hr class="solid2">
+            
+            <fieldset>
+          
+                <legend><span class="newsletter"></span>Newsletter</legend>
+                <p>Select the newsletters you would like to receive</p>
+            
+                <input type="checkbox" id="html" value="html_news" name="user_html"><label for="html">HTML News</label><br>
+                <input type="checkbox" id="css" value="css_news" name="user_css"><label for="css">CSS News</label><br>
+                <input type="checkbox" id="javascript" value="javascript_news" name="user_javascript"><label for="javascript">Javascript News</label><br>
+                
+                <p>Newsletter format</p>
+
+                <input type="radio" id="htmlradio" value="htmlradio" name="user_radio"><label for="htmlradio">HTML</label><br>
+                <input type="radio" id="plain_text" value="plain_text" name="user_radio"><label for="plain_text">Plain text</label>
+
+                <p>Other topics you'd like to hear about</p>
+
+                <textarea id="othertopics" name="user_othertopics"></textarea>
+
+            </fieldset>
+
+            <button type="submit">Sign Up</button>
+            
+        </form>
+    </main>
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+</body>
+</html>
