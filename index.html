@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <title>Newsletter</title>
 </head>
@@ -26,10 +26,10 @@
                 <legend><span class="info"></span>Contact Information</legend>
             
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name">
+                <input type="text" id="name" name="user_name" placeholder="Required">
                 
                 <label for="mail">Email Address</label>
-                <input type="email" id="mail" name="user_email">
+                <input type="email" id="mail" name="user_email" placeholder="Required">
                 
                 <label for="phonenumber">Phone Number</label>
                 <input type="phonenumber" id="phonenumber" name="user_phonenumber">
@@ -40,9 +40,6 @@
                 <label for="city">City</label>
                 <input type="city" id="city" name="user_city">
 
-                <label for="zipcode">Zip Code</label>
-                <input type="zipcode" id="zipcode" name="user_zipcode">
-                
                 <label for="state">State</label>
                 <select id="state" name="user_state">
                     <option value="" disabled selected>Choose State</option>
@@ -53,6 +50,11 @@
                     <option value="hawaii">Hawaii</option>
                     <option value="new_jersey">New Jersey</option>
                 </select>
+
+                <label for="zipcode">Zip Code</label>
+                <input type="zipcode" id="zipcode" name="user_zipcode">
+                
+                
             </fieldset>
 
             <hr class="solid2">
@@ -61,24 +63,22 @@
           
                 <legend><span class="newsletter"></span>Newsletter</legend>
                 <p>Select the newsletters you would like to receive</p>
-            
-                <input type="checkbox" id="html" value="html_news" name="user_html"><label for="html">HTML News</label><br>
-                <input type="checkbox" id="css" value="css_news" name="user_css"><label for="css">CSS News</label><br>
-                <input type="checkbox" id="javascript" value="javascript_news" name="user_javascript"><label for="javascript">Javascript News</label><br>
-                
+                <div class="checkboxflex">
+                    <input type="checkbox" id="html" value="html_news" name="user_html"><label class="inline" for="html">HTML News</label><br>
+                    <input type="checkbox" id="css" value="css_news" name="user_css"><label class="inline" for="css">CSS News</label><br>
+                    <input type="checkbox" id="javascript" value="javascript_news" name="user_javascript"><label class="inline" for="javascript">Javascript News</label><br>
+                </div>
                 <p>Newsletter format</p>
 
-                <input type="radio" id="htmlradio" value="htmlradio" name="user_radio"><label for="htmlradio">HTML</label><br>
-                <input type="radio" id="plain_text" value="plain_text" name="user_radio"><label for="plain_text">Plain text</label>
+                <input type="radio" id="htmlradio" value="htmlradio" name="user_radio"><label class="inline" for="htmlradio">HTML</label><br>
+                <input type="radio" id="plain_text" value="plain_text" name="user_radio"><label class="inline" for="plain_text">Plain text</label>
 
                 <p>Other topics you'd like to hear about</p>
 
                 <textarea id="othertopics" name="user_othertopics"></textarea>
 
+                <button type="submit">Sign Up</button>
             </fieldset>
-
-            <button type="submit">Sign Up</button>
-            
         </form>
     </main>
     <footer>

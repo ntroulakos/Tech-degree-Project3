@@ -1,0 +1,133 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+    margin: 0;
+    padding: 0;
+}
+.main-header,
+.after-header {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+.main-header {
+    color: white;
+    background-color: #384047;
+}
+.tagline {
+    color: lightgrey;
+}
+.solid,
+.solid2 {
+    margin: 4px 10px;
+}
+.solid {
+    border: solid 3px black;
+}
+.solid2 {
+    border: solid 1px black;
+    margin-bottom: 20px;
+}
+legend {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgba(129, 144, 168, 1);
+}
+
+input[type="text"],
+input[type="phonenumber"],
+input[type="streetaddress"],
+input[type="city"],
+input[type="email"],
+input[type="zipcode"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  color: lightgrey;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  
+}
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: small;
+    text-align: end;
+}
+input[type="zipcode"] {
+  width: 40%;
+}
+input[type="text"]:focus,
+input[type="phonenumber"]:focus,
+input[type="streetaddress"]:focus,
+input[type="city"]:focus,
+input[type="email"]:focus,
+input[type="zipcode"]:focus,
+textarea:focus {
+    border: solid 3px black;
+    outline: none;
+}
+select {   
+  color: rgba(129, 144, 168, 1);
+  width: 98%;
+}
+p {
+    color: #585481;
+}
+
+label.inline {
+    font-weight: 400;
+    display: inline;
+  }
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 16px 0;
+}
+textarea {
+    height: 80px;
+} 
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #3acec2;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #158178;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+}
+
+footer {
+    margin-top: -10px;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+
+
+
+ 
