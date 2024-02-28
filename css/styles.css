@@ -127,7 +127,36 @@ footer {
     font-size: small;
     font-style: italic;
 }
+@media (min-width: 768px) {
 
+    .desktop {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="phonenumber"],
+    input[type="streetaddress"],
+    input[type="city"],
+    input[type="email"],
+    input[type="zipcode"] {
+        width: 75%;
+    }
+    select {
+        width: 79%
+    }
+    textarea {
+        width: 96%
+    }
+    .desktopinline {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+    margin: 0 12px 24px 0;
+    }
+}
 
 
  

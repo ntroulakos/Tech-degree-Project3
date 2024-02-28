@@ -11,78 +11,86 @@
     <header class="main-header">
 		<h1 class="name">THE CODE REVIEW</h1>
 	</header>
-    <div class="after-header">
-		<h1 class="headline">Signup for our newsletter</h1>
-		<span class="tagline">Get the latest news on how your code is doing right in your inbox.</span>
-	</div>
-    <hr class="solid">
-    <hr class="solid2">
-    <main>
-        
-        <form action="index.html" method="post">
-        
-            <fieldset>
-          
-                <legend><span class="info"></span>Contact Information</legend>
+    <div class="desktop">
+        <div class="after-header">
+            <h1 class="headline">Signup for our newsletter</h1>
+            <span class="tagline">Get the latest news on how your code is doing right in your inbox.</span>
+        </div>
+        <hr class="solid">
+        <hr class="solid2">
+        <main>
             
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name" placeholder="Required">
-                
-                <label for="mail">Email Address</label>
-                <input type="email" id="mail" name="user_email" placeholder="Required">
-                
-                <label for="phonenumber">Phone Number</label>
-                <input type="phonenumber" id="phonenumber" name="user_phonenumber">
-                
-                <label for="streetaddress">Street Address</label>
-                <input type="streetaddress" id="streetaddress" name="user_streetaddress">
-
-                <label for="city">City</label>
-                <input type="city" id="city" name="user_city">
-
-                <label for="state">State</label>
-                <select id="state" name="user_state">
-                    <option value="" disabled selected>Choose State</option>
-                    <option value="california">California</option>
-                    <option value="texas">Texas</option>
-                    <option value="alaska">Alaska</option>
-                    <option value="virginia">Virginia</option>
-                    <option value="hawaii">Hawaii</option>
-                    <option value="new_jersey">New Jersey</option>
-                </select>
-
-                <label for="zipcode">Zip Code</label>
-                <input type="zipcode" id="zipcode" name="user_zipcode">
-                
-                
-            </fieldset>
-
-            <hr class="solid2">
+            <form action="index.html" method="post">
             
-            <fieldset>
-          
-                <legend><span class="newsletter"></span>Newsletter</legend>
-                <p>Select the newsletters you would like to receive</p>
-                <div class="checkboxflex">
-                    <input type="checkbox" id="html" value="html_news" name="user_html"><label class="inline" for="html">HTML News</label><br>
-                    <input type="checkbox" id="css" value="css_news" name="user_css"><label class="inline" for="css">CSS News</label><br>
-                    <input type="checkbox" id="javascript" value="javascript_news" name="user_javascript"><label class="inline" for="javascript">Javascript News</label><br>
-                </div>
-                <p>Newsletter format</p>
+                <fieldset>
+            
+                    <legend><span class="info"></span>Contact Information</legend>
+                    <div class="desktopinline">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Required">
+                    </div>
+                    <div class="desktopinline">
+                        <label for="mail">Email Address</label>
+                        <input type="email" id="mail" name="user_email" placeholder="Required">
+                     </div>
+                    <div class="desktopinline">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="phonenumber" id="phonenumber" name="user_phonenumber">
+                    </div>
+                    <div class="desktopinline">
+                        <label for="streetaddress">Street Address</label>
+                        <input type="streetaddress" id="streetaddress" name="user_streetaddress">
+                     </div>
+                    <div class="desktopinline">
+                        <label for="city">City</label>
+                        <input type="city" id="city" name="user_city">
+                    </div>
+                    <div class="desktopinline">
+                        <label for="state">State</label>
+                        <select id="state" name="user_state">
+                            <option value="" disabled selected>Choose State</option>
+                            <option value="california">California</option>
+                            <option value="texas">Texas</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="virginia">Virginia</option>
+                            <option value="hawaii">Hawaii</option>
+                            <option value="new_jersey">New Jersey</option>
+                        </select>
+                    </div>
+                    <div class="desktopinline">
+                        <label for="zipcode">Zip Code</label>
+                        <input type="zipcode" id="zipcode" name="user_zipcode">
+                    </div>
+                    
+                </fieldset>
 
-                <input type="radio" id="htmlradio" value="htmlradio" name="user_radio"><label class="inline" for="htmlradio">HTML</label><br>
-                <input type="radio" id="plain_text" value="plain_text" name="user_radio"><label class="inline" for="plain_text">Plain text</label>
+                <hr class="solid2">
+                
+                <fieldset>
+            
+                    <legend><span class="newsletter"></span>Newsletter</legend>
+                    <p>Select the newsletters you would like to receive</p>
+                    <div class="checkboxflex">
+                        <input type="checkbox" id="html" value="html_news" name="user_html"><label class="inline" for="html">HTML News</label><br>
+                        <input type="checkbox" id="css" value="css_news" name="user_css"><label class="inline" for="css">CSS News</label><br>
+                        <input type="checkbox" id="javascript" value="javascript_news" name="user_javascript"><label class="inline" for="javascript">Javascript News</label><br>
+                    </div>
+                    <p>Newsletter format</p>
 
-                <p>Other topics you'd like to hear about</p>
+                    <input type="radio" id="htmlradio" value="htmlradio" name="user_radio"><label class="inline" for="htmlradio">HTML</label><br>
+                    <input type="radio" id="plain_text" value="plain_text" name="user_radio"><label class="inline" for="plain_text">Plain text</label>
 
-                <textarea id="othertopics" name="user_othertopics"></textarea>
+                    <p>Other topics you'd like to hear about</p>
 
-                <button type="submit">Sign Up</button>
-            </fieldset>
-        </form>
-    </main>
-    <footer>
-        <p>Copyright The Code Review</p>
-    </footer>
+                    <textarea id="othertopics" name="user_othertopics"></textarea>
+
+                    <button type="submit">Sign Up</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <p>Copyright The Code Review</p>
+        </footer>
+    </div>
 </body>
 </html>
