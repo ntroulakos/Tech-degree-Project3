@@ -35,15 +35,15 @@
                      </div>
                     <div class="desktopinline">
                         <label for="phonenumber">Phone Number</label>
-                        <input type="phonenumber" id="phonenumber" name="user_phonenumber">
+                        <input type="tel" id="phonenumber" name="user_phonenumber">
                     </div>
                     <div class="desktopinline">
                         <label for="streetaddress">Street Address</label>
-                        <input type="streetaddress" id="streetaddress" name="user_streetaddress">
+                        <input type="text" id="streetaddress" name="user_streetaddress">
                      </div>
                     <div class="desktopinline">
                         <label for="city">City</label>
-                        <input type="city" id="city" name="user_city">
+                        <input type="text" id="city" name="user_city">
                     </div>
                     <div class="desktopinline">
                         <label for="state">State</label>
@@ -57,9 +57,9 @@
                             <option value="new_jersey">New Jersey</option>
                         </select>
                     </div>
-                    <div class="desktopinline">
+                    <div class="zipinline">
                         <label for="zipcode">Zip Code</label>
-                        <input type="zipcode" id="zipcode" name="user_zipcode">
+                        <input type="text" id="zipcode" name="user_zipcode">
                     </div>
                     
                 </fieldset>
@@ -80,8 +80,7 @@
                     <input type="radio" id="htmlradio" value="htmlradio" name="user_radio"><label class="inline" for="htmlradio">HTML</label><br>
                     <input type="radio" id="plain_text" value="plain_text" name="user_radio"><label class="inline" for="plain_text">Plain text</label>
 
-                    <p>Other topics you'd like to hear about</p>
-
+                    <label for="othertopics">Other topics you'd like to hear about</label>
                     <textarea id="othertopics" name="user_othertopics"></textarea>
 
                     <button type="submit">Sign Up</button>

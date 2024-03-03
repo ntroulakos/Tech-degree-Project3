@@ -1,5 +1,7 @@
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #384047;
     margin: 0;
     padding: 0;
@@ -45,11 +47,8 @@ label {
 }
 
 input[type="text"],
-input[type="phonenumber"],
-input[type="streetaddress"],
-input[type="city"],
+input[type="tel"],
 input[type="email"],
-input[type="zipcode"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
@@ -74,16 +73,14 @@ input[type="text"]::placeholder {
     font-size: small;
     text-align: end;
 }
-input[type="zipcode"] {
+input[id="zipcode"] {
   width: 40%;
 }
 input[type="text"]:focus,
-input[type="phonenumber"]:focus,
-input[type="streetaddress"]:focus,
-input[type="city"]:focus,
+input[type="tel"]:focus,
 input[type="email"]:focus,
-input[type="zipcode"]:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     border: solid 3px black;
     outline: none;
 }
@@ -106,7 +103,11 @@ input[type="checkbox"] {
 }
 textarea {
     height: 80px;
+    width: 90%;
 } 
+label[for="othertopics"] {
+    margin-top: 30px;
+}
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
@@ -134,11 +135,8 @@ footer {
         margin: 0 auto;
     }
     input[type="text"],
-    input[type="phonenumber"],
-    input[type="streetaddress"],
-    input[type="city"],
-    input[type="email"],
-    input[type="zipcode"] {
+    input[type="tel"],
+    input[type="email"] {
         width: 75%;
     }
     select {
@@ -155,6 +153,14 @@ footer {
     input[type="radio"],
     input[type="checkbox"] {
     margin: 0 12px 24px 0;
+    }
+    .zipinline {
+        display: flex;
+        align-items: baseline;
+    }
+    input[id="zipcode"] {
+        width: 20%;
+        margin: 0 0 0 95px;
     }
 }
 
